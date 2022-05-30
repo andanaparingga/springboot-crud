@@ -1,4 +1,4 @@
-package com.example.student.model;
+package com.example.product.model;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;

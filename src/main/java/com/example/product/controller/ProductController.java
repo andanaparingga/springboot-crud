@@ -1,4 +1,4 @@
-package com.example.student.controller;
+package com.example.product.controller;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.student.model.Product;
-import com.example.student.service.ProductService;
+import com.example.product.model.Product;
+import com.example.product.service.ProductService;
 
 @RestController
 public class ProductController {

@@ -1,8 +1,8 @@
-package com.example.student.repository;
+package com.example.product.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.example.student.model.Product;
+import com.example.product.model.Product;
 
 public interface ProductRepository extends MongoRepository<Product, Long>{
 

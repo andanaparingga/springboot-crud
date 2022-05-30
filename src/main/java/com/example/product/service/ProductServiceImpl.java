@@ -1,4 +1,4 @@
-package com.example.student.service;
+package com.example.product.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.student.exception.ResourceNotFoundException;
-import com.example.student.model.Product;
-import com.example.student.repository.ProductRepository;
+import com.example.product.exception.ResourceNotFoundException;
+import com.example.product.model.Product;
+import com.example.product.repository.ProductRepository;
 
 
 @Service
