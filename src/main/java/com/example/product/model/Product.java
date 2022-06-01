@@ -6,7 +6,10 @@ import javax.validation.constraints.Size;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Sharded;
+import org.springframework.data.mongodb.core.mapping.ShardingStrategy;
 
+@Sharded(shardKey = "name", shardingStrategy = ShardingStrategy.HASH)
 @Document (collection = "book")
 public class Product {
 	

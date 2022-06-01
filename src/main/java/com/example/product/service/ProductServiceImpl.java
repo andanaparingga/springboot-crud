@@ -58,6 +58,18 @@ public class ProductServiceImpl implements ProductService{
 			throw new ResourceNotFoundException("Record not found with id : " + productId);
 		}
 	}
+	
+	@Override
+	public Product getProductByName(String productName) {
+		Optional<Product> productDb = this.productRepository.findByName(productName);
+		
+		if(productDb.isPresent()) {
+			return productDb.get();
+		}else {
+			throw new ResourceNotFoundException("Record not found with id : " + productName);
+		}
+	}
+	
 
 	@Override
 	public void deleteProduct(long productId) {
